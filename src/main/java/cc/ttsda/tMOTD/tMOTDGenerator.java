@@ -51,6 +51,11 @@ public class tMOTDGenerator {
                 vars.put("x", Integer.toString((int)player.getLocation().getX()));
                 vars.put("y", Integer.toString((int)player.getLocation().getY()));
                 vars.put("z", Integer.toString((int)player.getLocation().getZ()));
+                vars.put("ip", player.getAddress().getAddress().getHostAddress());
+                vars.put("level", Integer.toString(player.getLevel()));
+                vars.put("health", Integer.toString(player.getHealth()));
+                vars.put("maxhealth", Integer.toString(player.getMaxHealth()));
+                vars.put("food", Integer.toString(player.getFoodLevel()));
 
                 // HH:MM time
                 if (rawMotd.indexOf("%time%") > 0){
