@@ -1,0 +1,29 @@
+# Set to true to use per-group motd, if there isn't a motd with the name of the
+# group, the default one is used
+per-group-motd: false
+
+motd: |
+   &aHello, &2%player%&a, and welcome to our server!
+   &aThere are &2%players%&a/&2%maximum%&a online.
+   &aYou're on the world &2%world%&a.
+   &aIt's &2%time%&a (&2%timeday%&a) and it's &2%weather%&a.
+   &aYour location is &2%x%&a/&2%y%&a/&2%z% &a(&2%biome%&a).
+   &aMOTD: &2<news.txt>
+
+groupmotds:
+   vip: |
+      &aHello, &2%player%&a, and welcome to our server and thank you for donating!
+      &aThere are &2%players%&a/&2%maximum%&a online.
+      &aYou're on the world &2%world%&a.
+      &aIt's &2%time%&a (&2%timeday%&a) and it's &2%weather%&a.
+      &aYour location is &2%x%&a/&2%y%&a/&2%z% &a(&2%biome%&a).
+      &aMOTD: &2<news.txt>
+    
+   guest: |
+      &aHello, &2%player%&a, and welcome to our server!
+      &4Go to our website to apply for regular.
+      &aThere are &2%players%&a/&2%maximum%&a online.
+      &aYou're on the world &2%world%&a.
+      &aIt's &2%time%&a (&2%timeday%&a) and it's &2%weather%&a.
+      &aYour location is &2%x%&a/&2%y%&a/&2%z% &a(&2%biome%&a).
+      &aMOTD: &2<news.txt>

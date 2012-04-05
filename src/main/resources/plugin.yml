@@ -1,0 +1,32 @@
+author: TTSDA
+name: tMOTD
+main: cc.ttsda.tMOTD.tMOTD
+version: "${project.version}"
+softdepend: [Vault]
+commands:
+   tmotd:
+      description: See/Change/reload motd.
+      usage: |
+          /<command> [player]
+          /<command> reload
+          /<command> set <filename> <message>
+          /<command> add <filename> <message>
+   motd:
+      description: See/Change/reload motd.
+      usage: |
+          /<command> [player]
+          /<command> reload
+          /<command> set <filename> <message>
+          /<command> add <filename> <message>
+permissions:
+    tmotd.*:
+        description: Gives access to all tMOTD commands
+        children:
+            tmotd.set: true
+            tmotd.reload: true
+    tmotd.edit:
+        description: Allows you to change a tMOTD file
+        default: op
+    tmotd.reload:
+        description: Allows you to reload tMOTD
+        default: op
