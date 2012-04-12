@@ -1,5 +1,6 @@
 # Set to true to use per-group motd, if there isn't a motd with the name of the
 # group, the default one is used
+# REQUIRES VAULT
 per-group-motd: false
 
 motd: |
